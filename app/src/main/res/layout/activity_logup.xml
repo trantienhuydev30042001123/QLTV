@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogupActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edUserName"
+            android:background="@drawable/round_broder1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:hint="Username "/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edTenTT"
+            android:background="@drawable/round_broder1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:hint="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPassword"
+            android:background="@drawable/round_broder1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:id="@+id/btnLogup1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_boder2"
+            android:text="SignUp"
+            android:textColor="#FFFCFC" />
+
+        <Button
+            android:id="@+id/btnExit1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_boder2"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#F8F5F5"/>
+    </LinearLayout>
+
+
+</LinearLayout>
